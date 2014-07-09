@@ -22,6 +22,12 @@
 		0A684EA91663711E006ACF14 /* iTunesSearch.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0A684EA81663711E006ACF14 /* iTunesSearch.podspec */; };
 		0A7E5F11161CE396006AB45D /* ItunesSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E5F10161CE396006AB45D /* ItunesSearch.m */; };
 		0A7E5F14161CE3DB006AB45D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E5F13161CE3DB006AB45D /* README.md */; };
+		3573BBF5196D041300E49F24 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3573BBF4196D041300E49F24 /* SearchTableViewController.m */; };
+		3573BBF9196D0AD700E49F24 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3573BBF8196D0AD700E49F24 /* AsyncImageView.m */; };
+		3573BBFB196D0B8200E49F24 /* dummy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3573BBFA196D0B8200E49F24 /* dummy.png */; };
+		3573BBFE196D0BB000E49F24 /* img_no_cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 3573BBFC196D0BB000E49F24 /* img_no_cover.png */; };
+		3573BBFF196D0BB000E49F24 /* img_no_cover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3573BBFD196D0BB000E49F24 /* img_no_cover@2x.png */; };
+		3573BC01196D0C3800E49F24 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3573BC00196D0C3800E49F24 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +52,14 @@
 		0A7E5F0F161CE396006AB45D /* ItunesSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItunesSearch.h; sourceTree = "<group>"; };
 		0A7E5F10161CE396006AB45D /* ItunesSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItunesSearch.m; sourceTree = "<group>"; };
 		0A7E5F13161CE3DB006AB45D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		3573BBF3196D041300E49F24 /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
+		3573BBF4196D041300E49F24 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+		3573BBF7196D0AD700E49F24 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		3573BBF8196D0AD700E49F24 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
+		3573BBFA196D0B8200E49F24 /* dummy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dummy.png; sourceTree = "<group>"; };
+		3573BBFC196D0BB000E49F24 /* img_no_cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_no_cover.png; sourceTree = "<group>"; };
+		3573BBFD196D0BB000E49F24 /* img_no_cover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_no_cover@2x.png"; sourceTree = "<group>"; };
+		3573BC00196D0C3800E49F24 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3573BC01196D0C3800E49F24 /* QuartzCore.framework in Frameworks */,
 				0A09AC491615AC7300827E5C /* UIKit.framework in Frameworks */,
 				0A09AC4B1615AC7300827E5C /* Foundation.framework in Frameworks */,
 				0A09AC4D1615AC7300827E5C /* CoreGraphics.framework in Frameworks */,
@@ -86,6 +101,7 @@
 		0A09AC471615AC7300827E5C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3573BC00196D0C3800E49F24 /* QuartzCore.framework */,
 				0A09AC481615AC7300827E5C /* UIKit.framework */,
 				0A09AC4A1615AC7300827E5C /* Foundation.framework */,
 				0A09AC4C1615AC7300827E5C /* CoreGraphics.framework */,
@@ -101,6 +117,9 @@
 				0A09AC601615AC7300827E5C /* MainStoryboard.storyboard */,
 				0A09AC631615AC7300827E5C /* ViewController.h */,
 				0A09AC641615AC7300827E5C /* ViewController.m */,
+				3573BBF3196D041300E49F24 /* SearchTableViewController.h */,
+				3573BBF4196D041300E49F24 /* SearchTableViewController.m */,
+				3573BBF6196D0AD700E49F24 /* AsyncImageView */,
 				0A09AC4F1615AC7300827E5C /* Supporting Files */,
 			);
 			path = Example;
@@ -113,6 +132,9 @@
 				0A09AC511615AC7300827E5C /* InfoPlist.strings */,
 				0A09AC541615AC7300827E5C /* main.m */,
 				0A09AC561615AC7300827E5C /* Example-Prefix.pch */,
+				3573BBFA196D0B8200E49F24 /* dummy.png */,
+				3573BBFC196D0BB000E49F24 /* img_no_cover.png */,
+				3573BBFD196D0BB000E49F24 /* img_no_cover@2x.png */,
 				0A09AC5A1615AC7300827E5C /* Default.png */,
 				0A09AC5C1615AC7300827E5C /* Default@2x.png */,
 				0A09AC5E1615AC7300827E5C /* Default-568h@2x.png */,
@@ -127,6 +149,15 @@
 				0A7E5F10161CE396006AB45D /* ItunesSearch.m */,
 			);
 			path = iTunesSearch;
+			sourceTree = "<group>";
+		};
+		3573BBF6196D0AD700E49F24 /* AsyncImageView */ = {
+			isa = PBXGroup;
+			children = (
+				3573BBF7196D0AD700E49F24 /* AsyncImageView.h */,
+				3573BBF8196D0AD700E49F24 /* AsyncImageView.m */,
+			);
+			path = AsyncImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3573BBFF196D0BB000E49F24 /* img_no_cover@2x.png in Resources */,
 				0A09AC531615AC7300827E5C /* InfoPlist.strings in Resources */,
 				0A09AC5B1615AC7300827E5C /* Default.png in Resources */,
 				0A09AC5D1615AC7300827E5C /* Default@2x.png in Resources */,
@@ -187,6 +219,8 @@
 				0A09AC621615AC7300827E5C /* MainStoryboard.storyboard in Resources */,
 				0A7E5F14161CE3DB006AB45D /* README.md in Resources */,
 				0A684EA616637111006ACF14 /* CHANGELOG in Resources */,
+				3573BBFB196D0B8200E49F24 /* dummy.png in Resources */,
+				3573BBFE196D0BB000E49F24 /* img_no_cover.png in Resources */,
 				0A684EA91663711E006ACF14 /* iTunesSearch.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,8 +233,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A09AC551615AC7300827E5C /* main.m in Sources */,
+				3573BBF9196D0AD700E49F24 /* AsyncImageView.m in Sources */,
 				0A09AC591615AC7300827E5C /* AppDelegate.m in Sources */,
 				0A09AC651615AC7300827E5C /* ViewController.m in Sources */,
+				3573BBF5196D041300E49F24 /* SearchTableViewController.m in Sources */,
 				0A7E5F11161CE396006AB45D /* ItunesSearch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
